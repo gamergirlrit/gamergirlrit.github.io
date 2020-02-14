@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 0;
+    padding:0;
     background-color: #ffbfee;
     font-family: 'Courgette', sans-serif;
     overflow-x: hidden;
@@ -86,7 +87,7 @@ h2 {
     text-align: center;
 }
 
-#summary{
+.summary{
     margin:auto;
     text-align: center;
     background-image: url("classroom.png"); /* The image used */
@@ -98,15 +99,15 @@ h2 {
 #innerSum{
     width:60%;
     margin:auto;
-    background-color: rgba(235,245,255,0.9);
+    background-color: rgba(235,245,255,0.97);
 }
 
-#summary h2{
+.summary h2{
     padding-bottom: 0px;
     margin-bottom: 10px;
 }
 
-#summary p{
+.summary p{
     padding-bottom:30px;
     width:80%;
     margin:auto;
@@ -122,13 +123,22 @@ p{
 .info{
     display:grid;
     grid-template-columns: 1fr 2fr 1fr;
-    margin:10vh auto;
+    width:100vw;
+    margin:7vh auto;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info img{
+    max-width: 450px;
+    padding-bottom: 50px;
 }
 
 .info h2{
     grid-column: 2/3;
-    padding-bottom: 0px;
+    padding: 0px 100px;
     margin-bottom: 10px;
 }
 
@@ -156,3 +166,43 @@ p{
     margin:auto;
     text-align: center;
 }
+
+.names{
+    margin-top:-200px;
+    text-align: center;
+    font-size: 5rem;
+    color: #ff3651;
+    text-shadow: 1px 3px white;
+}
+
+.names ul{
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.names ul li{
+    padding-bottom: 20px;
+}
+
+/* Taken from: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #fcd4f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ff3651;
+    border-radius: 2px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b80f25;
+  }
