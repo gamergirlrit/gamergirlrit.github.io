@@ -147,11 +147,11 @@ p{
     font-size: 3.5rem;
 }
 
-.info a{
+a{
     color: #ff3651;
 }
 
-.info a:hover{
+a:hover{
     color:white;
     text-shadow: 1px 5px #ff3651;
     cursor: pointer;
